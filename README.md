@@ -1,6 +1,6 @@
 # MLend Mini-Project: Deception Detection using Audio Features
 
-### Dataset
+## Dataset
 The repository includes the audio files used for training and testing. They are located in the `data/audio/` directory.
 
 ## Introduction
