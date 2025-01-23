@@ -1,5 +1,10 @@
 # MLend Mini-Project: Deception Detection using Audio Features
+---
+## NOTICE
+Note that modification on Figure 4 Title has not been updated properly(Energy variability(x) -> Pitch Consistency(o)).
+The refined title should be 'Figure 4. Feature importance comparison: before and after adding "Pitch Consistency"'
 
+---
 ## Dataset
 
 The audio files used for this project are part of the **MLEnd Deception Dataset**.
