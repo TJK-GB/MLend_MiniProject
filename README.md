@@ -1,7 +1,19 @@
 # MLend Mini-Project: Deception Detection using Audio Features
 
 ## Dataset
-The repository includes the audio files used for training and testing. They are located in the `data/audio/` directory.
+
+The audio files used for this project are part of the **MLEnd Deception Dataset**.
+
+### Access the Audio Files
+The dataset can be downloaded from the following Google Drive link:
+[Download the MLEnd Deception Dataset](https://drive.google.com/file/d/1Yf-A07B8R84QfBmKrBi__8HWiVcpzZGU/view)
+
+### Instructions
+1. Download the dataset from the link above.
+2. Extract the audio files into a folder on your local machine.
+3. Specify the path to the audio files in the notebook or script when running the project.
+   For example, if you extract the files to a folder named `audio` in the root directory:
+---
 
 ## Introduction
 This project aims to classify audio recordings as either *truthful* or *deceptive* stories using machine learning models. The analysis focuses on extracting meaningful audio features, exploring feature variability through clustering, and evaluating supervised learning models for deception detection.
