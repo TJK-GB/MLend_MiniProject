@@ -143,8 +143,8 @@ These features were selected based on prior research in speech analysis and dece
 ---
 
 ### Special Thanks
-I would like to express my gratitude to Professor Jesús Requena Carrión for his guidance and support throughout the ECS7020P: Principles of Machine Learning module.
-His expertise and feedback were invaluable in completing this project.
+I would like to express my gratitude to Professor Jesús Requena Carrión and Dr.Ziquan Liu for their guidance and support throughout the ECS7020P: Principles of Machine Learning module.
+Their expertise and feedbacks were invaluable in completing this project.
 
 I also want to extend my appreciation to all the demonstrators who provided assistance during the module.
 Their patience and dedication made a significant difference in helping me navigate challenges and successfully complete this work.
