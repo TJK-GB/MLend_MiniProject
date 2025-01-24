@@ -1,21 +1,21 @@
 # MLend Mini-Project: Deception Detection using Audio Features
 ---
-## NOTICE
+### NOTICE
 Note that modification on Figure 4 Title has not been updated properly(Energy variability(x) -> Pitch Consistency(o)).<br>
 The refined title should be <b>'Figure 4. Feature importance comparison: before and after adding <u>"Pitch Consistency"</u>'</b>
+---
+
+## MLEnd Datasets
+
+This project is part of the **ECS7020P: Principles of Machine Learning** module at Queen Mary University of London. The dataset used, the **MLEnd Small Deception Dataset**, is part of the [**MLEnd Datasets**](https://mlenddatasets.github.io/) collection, an educational resource. This project contributes to the practical application of concepts taught in the ECS7020P module by using real-world datasets curated as part of a collaborative educational initiative.
+The **MLEnd Datasets** were developed as part of an innovative learning approach in the **Principles of Machine Learning** and **Introduction to Data Science Programming** modules. 
+This project specifically focuses on detecting deception in speech by classifying audio recordings as *truthful* or *deceptive*, using features extracted from the **MLEnd Small Deception Dataset**.
 
 ---
 ## Dataset
 
-This project uses the **MLEnd Small Deception Dataset**, which is part of the MLEnd Dataset collection designed for machine learning research and education.
-The dataset is provided by the **MLEnd Project(https://mlenddatasets.github.io/)**, a resource for datasets used in the module **ECS7020P: Principles of Machine Learning** at Queen Mary University of London.
-
-### Access the Audio Files
-The dataset can be downloaded from the following Google Drive link:
-[Download the MLEnd Deception Dataset](https://drive.google.com/file/d/1Yf-A07B8R84QfBmKrBi__8HWiVcpzZGU/view)
-
-Alternatively, you can download the dataset using the following Python commands.
-
+You can download the dataset from the following sources:
+- **Primary Access**: Use the `mlend` Python library (instructions below).
 ```python
 # 1 – Install library - make sure you have version 1.0.0.4
 pip install mlend==1.0.0.4
@@ -23,6 +23,7 @@ pip install mlend==1.0.0.4
 # 2. Import library and functions
 import mlend
 from mlend import download_deception_small, deception_small_load
+
 # 3. Download small data
 datadir = download_deception_small(save_to='MLEnd', subset={}, verbose=1, overwrite=False)
 
@@ -33,12 +34,14 @@ TrainSet, TestSet, MAPs = deception_small_load(datadir_main=datadir, train_test_
 help(download_deception_small)
 help(deception_small_load)
 ```
-
+ 
+- **Alternative Download Link**: [Google Drive](https://drive.google.com/file/d/1Yf-A07B8R84QfBmKrBi__8HWiVcpzZGU/view)
 ### Instructions
 1. Download the dataset from the link above.
 2. Extract the audio files into a folder on your local machine.
 3. Specify the path to the audio files in the notebook or script when running the project.
    For example, if you extract the files to a folder named `audio` in the root directory:
+   
 ---
 
 ## Introduction
@@ -135,3 +138,12 @@ These features were selected based on prior research in speech analysis and dece
 ## How to Use
 - Run the Jupyter notebook to explore the analysis.
 - Use the provided scripts to re-train models or extract features from new datasets.
+
+---
+
+### Special Thanks
+I would like to express my gratitude to Professor Jesús Requena Carrión for his guidance and support throughout the ECS7020P: Principles of Machine Learning module.
+His expertise and feedback were invaluable in completing this project.
+
+I also want to extend my appreciation to all the demonstrators who provided assistance during the module.
+Their patience and dedication made a significant difference in helping me navigate challenges and successfully complete this work.
