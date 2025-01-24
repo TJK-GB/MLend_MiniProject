@@ -7,11 +7,32 @@ The refined title should be <b>'Figure 4. Feature importance comparison: before 
 ---
 ## Dataset
 
-The audio files used for this project are part of the **MLEnd Deception Dataset**.
+This project uses the **MLEnd Small Deception Dataset**, which is part of the MLEnd Dataset collection designed for machine learning research and education.
+The dataset is provided by the **MLEnd Project(https://mlenddatasets.github.io/)**, a resource for datasets used in the module **ECS7020P: Principles of Machine Learning** at Queen Mary University of London.
 
 ### Access the Audio Files
 The dataset can be downloaded from the following Google Drive link:
 [Download the MLEnd Deception Dataset](https://drive.google.com/file/d/1Yf-A07B8R84QfBmKrBi__8HWiVcpzZGU/view)
+
+Alternatively, you can download the dataset using the following Python commands.
+
+```python
+# 1 – Install library - make sure you have version 1.0.0.4
+pip install mlend==1.0.0.4
+
+# 2. Import library and functions
+import mlend
+from mlend import download_deception_small, deception_small_load
+# 3. Download small data
+datadir = download_deception_small(save_to='MLEnd', subset={}, verbose=1, overwrite=False)
+
+# 4. Read file paths
+TrainSet, TestSet, MAPs = deception_small_load(datadir_main=datadir, train_test_split=None, verbose=1, encode_labels=True)
+
+# To read the documentation on the given functions run:
+help(download_deception_small)
+help(deception_small_load)
+```
 
 ### Instructions
 1. Download the dataset from the link above.
